@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Contest Info",
+  "version": "0.1.0",
+  "description": "Shows contest rating and contest information on hover.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["data/ratings.json"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+}

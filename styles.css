@@ -1,0 +1,25 @@
+.lc-tooltip{
+    position: fixed;
+
+    background:#1f2937;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    z-index:999999;
+
+    pointer-events:none;
+
+    display:none;
+
+    font-family:Arial,sans-serif;
+
+    font-size:14px;
+
+    min-width:180px;
+}
