@@ -43,13 +43,15 @@ function setupHoverEvents() {
 
         if (!info) {
             tooltip.innerHTML = `
-                <div>No contest data</div>
+                <div><strong>Contest Rating</strong></div>
+                <div>N/A</div>
             `;
+        
         } else {
             tooltip.innerHTML = `
-                <div>🏆 ${info.contest}</div>
-                <div>📝 ${info.question}</div>
-                <div>⭐ ${info.rating}</div>
+                <div><strong>⭐ Rating:</strong> ${info.rating}</div>
+                <div><strong>🏆 Contest:</strong> ${info.contestType} ${info.contestNumber}</div>
+                <div><strong>📝 Question:</strong> Q${info.question}</div>
             `;
         }
 
